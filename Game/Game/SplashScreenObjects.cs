@@ -29,13 +29,7 @@ namespace MyGame
             Pos.X = Pos.X + Dir.X;
 
             if (Pos.X < 0) Pos.X = 400 + Size.Width;
-            //Pos.X = Pos.X + Dir.X;
-            //Pos.Y = Pos.Y + Dir.Y;
-            //if (Pos.X < 0) Dir.X = -Dir.X;
-            //if (Pos.X > Game.Width) Dir.X = -Dir.X;
-
-            //if (Pos.Y < 0) Dir.X = -Dir.X;
-            //if (Pos.Y > Game.Height) Dir.Y = -Dir.Y;
+            
         }
     }
 }

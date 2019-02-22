@@ -26,11 +26,7 @@ namespace MyGame
             Refrash();
         }
         public static void Draw()
-        {
-            Buffer.Graphics.Clear(Color.Black);
-            Buffer.Graphics.DrawRectangle(Pens.White, new Rectangle(100, 100, 200, 200));
-            Buffer.Graphics.FillEllipse(Brushes.Wheat, new Rectangle(100, 100, 200, 200));
-            Buffer.Render();
+        {            
             Buffer.Graphics.Clear(Color.Black);
             foreach (SplashScreenObjects obj in objs)
                 obj.Draw();
@@ -72,7 +68,7 @@ namespace MyGame
             objs = new SplashScreenObjects[30];
             
             for (int i = 0; i < objs.Length; i++)
-                objs[i] = new SplashScreenObjects(new Point(200, 200), new Point(-1, 0), new Size(5, 5));
+                objs[i] = new SplashScreenObjects(new Point(20*i, 20*i), new Point(-1, 0), new Size(5, 5));
             
         }
     }
