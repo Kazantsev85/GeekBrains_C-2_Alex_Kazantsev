@@ -68,7 +68,7 @@ namespace MyGame
             objs = new SplashScreenObjects[30];
             
             for (int i = 0; i < objs.Length; i++)
-                objs[i] = new SplashScreenObjects(new Point(20*i, 20*i), new Point(-1, 0), new Size(5, 5));
+                objs[i] = new SplashScreenObjects(new Point(200, 200), new Point(-1, 0), new Size(5, 5));
             
         }
     }
